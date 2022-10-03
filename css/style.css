@@ -26,8 +26,8 @@ header {
     align-items: center;
   }
 
-.nav_links:visited{
-  color: inherit;
+.nav_item a{
+  color: initial;
 }
 
 .card > header{
