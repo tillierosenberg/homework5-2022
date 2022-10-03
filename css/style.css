@@ -27,7 +27,7 @@ header {
   }
 
 .nav_links:visited{
-  color: initial;
+  color: inherit;
 }
 
 .card > header{
