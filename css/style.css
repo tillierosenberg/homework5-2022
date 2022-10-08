@@ -1,3 +1,5 @@
+
+/* style the body and header */
 body {
     font-family: 'Poppins', serif;
     background: #f1f1f1;
@@ -10,25 +12,30 @@ header {
     align-items: center;
 }
 
+/* create animation for logo */
 @keyframes mymove{
     from {width: 25px;
     opacity: 0;}
     to {width: 475px;
     opacity: 1;}
   }
+
+/* apply animation to the logo */
   #logo{
     animation: mymove 5s;
   }
-
+/* style nav linjs */
 .nav_links{
     display: flex; 
     flex-direction: column;
     align-items: center;
   }
 
+/* make links not change color when clicked */
 .nav_item a{
   color: initial;
 }
+/* style the header child of card class */
 .card > header{
   background: #288088;
   border: 2px solid #45ADAD;
@@ -36,6 +43,7 @@ header {
   border-radius: 50px 50px 0px 0px;
 
 }
+/* style the card class */
 .card{ 
   display: flex; 
   width: 450px; 
@@ -45,6 +53,7 @@ header {
   border-radius: 50px 50px 0px 0px;
 
 }
+/* style the pricing class */
 .pricing{ 
   display: flex;
   flex-direction: column;
@@ -52,17 +61,22 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+/* style the images in the gallery */
 .gallery img {
   border: solid 10px #50C7c7;
   margin: 10px;
   width: 300px;
 }
+
+/* format the gallery */
 .gallery {
   display: flex; 
   flex-wrap: wrap;
   justify-content: center;
 
 }
+
+/* media query for desktop view */
 @media screen and (min-width: 900px) {
   header, .nav_links{
     display: flex;
@@ -71,6 +85,7 @@ header {
     width: 100%;
   }
 
+  /* style the card class */
   .card {
     width: 275px;
     flex-direction: row; 
@@ -78,16 +93,18 @@ header {
     justify-content: center;
 
   }
-  
+  /* style the fixed header */
   a  + header{
     position: fixed;
     top: 0;
     
   }
 
+/* move content down so it is not covered by fixed logo */
 main {
   padding-top: 60px; 
 }
+/* style the pricing class */
   .pricing {
     flex-direction: row;
     justify-content: center;
@@ -95,17 +112,20 @@ main {
 
 }
 
+/* media query for reduced motion */
 @media (prefers-reduced-motion) {
   #logo {
     animation: none;
   }
 }
+
+/* media query for print view */
 @media print {
   body { 
     font-family: Arial, Helvetica;
     background-image: none;
   }
-  
+  /* style the nav and navlinks  */
   nav, .nav_links {
     display: flex;
     flex-direction: row;
@@ -114,25 +134,27 @@ main {
  .nav_links{
    justify-content: space-around;
  }
+ /* style the pricing class */
   .pricing {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
     }
 
-
+/* style the card class*/
   .card {
     border: 2px solid #45ADDD;
     flex-basis: 325px;
     flex-wrap: wrap;
     flex-direction: column;
     overflow: hidden;
-    /* justify-content: center; */
   }
-
+/* hide gallery for print view */
   #gallery, .gallery {
     display: none;
   }
+
+/* add emoji for the second line */
   .card li:nth-child(2)::after{
     content: "👍🏼"
   }
