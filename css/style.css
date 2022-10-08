@@ -29,7 +29,6 @@ header {
 .nav_item a{
   color: initial;
 }
-
 .card > header{
   background: #288088;
   border: 2px solid #45ADAD;
@@ -37,8 +36,6 @@ header {
   border-radius: 50px 50px 0px 0px;
 
 }
-
-
 .card{ 
   display: flex; 
   width: 450px; 
@@ -66,7 +63,6 @@ header {
   justify-content: center;
 
 }
-
 @media screen and (min-width: 900px) {
   header, .nav_links{
     display: flex;
@@ -82,11 +78,16 @@ header {
     justify-content: center;
 
   }
-
+  
   a  + header{
     position: fixed;
+    top: 0;
+    
   }
 
+main {
+  padding-top: 60px; 
+}
   .pricing {
     flex-direction: row;
     justify-content: center;
