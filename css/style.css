@@ -32,8 +32,9 @@ header {
   }
 
 /* make links not change color when clicked */
-.nav_item a{
-  color: initial;
+.nav_item a:visited{
+  text-decoration: none;
+  color: blue;
 }
 /* style the header child of card class */
 .card > header{
