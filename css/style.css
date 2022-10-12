@@ -44,20 +44,21 @@ header {
   border-radius: 50px 50px 0px 0px;
 
 }
+
 /* style the card class */
 .card{ 
   display: flex; 
-  width: 450px; 
+  flex-basis: 450px; 
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center;
+  align-content: center; */
   border-radius: 50px 50px 0px 0px;
 
 }
 /* style the pricing class */
 .pricing{ 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -88,10 +89,11 @@ header {
 
   /* style the card class */
   .card {
-    width: 275px;
-    flex-direction: row; 
+    flex-basis: 275px;
+    /* flex-direction: row;  */
     flex-wrap: wrap;
     justify-content: center;
+    
 
   }
   /* style the fixed header */
@@ -109,6 +111,7 @@ main {
   .pricing {
     flex-direction: row;
     justify-content: center;
+    flex-wrap: nowrap;
   }
 
 }
